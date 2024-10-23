@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/75efee412a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">     
+            <nav>
+                <h1>Siva's Portfolio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#Certifications">Certifications</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="header">
+                <p>Web developer</p>
+                <h1>Hey there,This is <span>Siva</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutcol1">
+                    <img src="images/c.jpeg" alt="" >
+                </div>
+                <div class="aboutcol2">
+                    <h1 class="sub-title">About me </h1>
+                    <p> I am a passionate web developer looking for opportunity to enhance my skillsets</p>
+                    <div class="tab-titles">
+                        <p class="tab-links " onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>   
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>GIT</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"  id="projects">
+                        <ul>
+                            <li><span>Expense  tracker</span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et recusandae quibusdam neque aliquam numquam maiores facilis eius dolor architecto quae?</li>
+                            <li><span>Expense  tracker</span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et recusandae quibusdam neque aliquam numquam maiores facilis eius dolor architecto quae?</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Pursuing</span><br>BCA-80%-Rathinavel Subramanian college of arts and Science</li>
+                            <li><span>2022</span><br>HSC-90%-Mercy matric hr sec school</li>
+                            <li><span>2020</span><br>SSLC-80%-Mercy matric hr  sec school</li>
+                       
+                        </ul>
+                    </div>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/streakify.png" alt="">  
+                    <div class="layer">
+                        <h3>Streakify</h3>
+                        <p>Task manager combating procastination with streaks,customization  and social sharing features securely</p>
+                        <a href="https://sivalingamkaliyappan.github.io/Streakify/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>                  
+                </div>
+                <div class="work">
+                    <img src="images/expensetracker.png" alt="">  
+                    <div class="layer">
+                        <h3>Expense tracker</h3>
+                        <p>Built an expense tracker to track income and expense for personalized  budgeting</p>
+                        <a href="https://sivalingamkaliyappan.github.io/ExpenseTracker/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    <div id="Certifications">
+        <div class="container">
+            <h1 class="sub-title">Certifications</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="certifications/artificialintelligence.jpeg" alt="">  
+                    <div class="layer">
+                        <h3>Artificial Intelligence fundamentals</h3>
+                        <a href="https://www.mygreatlearning.com/certificate/ETIERJXU"><i class="fas fa-external-link-alt"></i></a>
+                    </div>                  
+                </div>
+                <div class="work">
+                    <img src="certifications/cloudserviceproviders.jpeg" alt="">  
+                    <div class="layer">
+                        <h3>Cloud service providers</h3>
+                        <a href="https://www.mygreatlearning.com/certificate/JXSPKSGF"><i class="fas fa-external-link-alt"></i></a>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>                    
+                    <p class="fas fa-paper-plane"><span>mkaliyappansivalingam@gmail.com</span></p>
+                    <p class="fas fa-phone-square-alt">+91 8248074261</p> <br>
+                    <a href="resume/sivalingam.pdf" class="btn btn2" download>Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name"  placeholder="your name" required>
+                        <input type="email" name="Email" placeholder="your email" required>
+                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+              </div>
+        </div>
+     </div>
+     </div>
+
+     <script src="script.js"></script>
+    
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwkZW-ofBaeuxRF6LWafpD6jgQbo084FWBjik-5A0YqdaY_vS89IDTAbgbTaPEHhKRvfA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Message sent to siva successfully";
+                setTimeout(function() {
+                    msg.innerHTML="";
+                },5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+ 
+
+    
+</body>
+</html>
