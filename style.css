@@ -53,7 +53,8 @@ nav ul li a{
 
 
 a:hover{
-    color: rgb(0, 255, 191);
+    color: rgb(255, 0, 0);
+    
 }
 
 
@@ -70,6 +71,7 @@ a:hover{
 
 .header h1 span{
     color: red;
+    
 }
 
 
@@ -221,11 +223,12 @@ a:hover{
 
 .work:hover .layer{
     height: 100%;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
 .btn{
+    background-color: black;
     display: block;
     margin: 50px auto;
     width:fit-content;
@@ -261,7 +264,6 @@ a:hover{
 
 .btn.btn2{
     display: inline-block;
-    background: #44df07b6;
 }
 
 .contact-right form{
@@ -295,7 +297,8 @@ nav .fas{
     #header{
         font-size: 15px;
         margin-top: 100%;
-        background-size: 100vw;
+        background
+        
     }
     #header h1{
         font-size: 30px;
