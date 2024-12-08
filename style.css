@@ -70,8 +70,12 @@ a:hover{
 }
 
 .header h1 span{
-    color: red;
     
+    background: #008080;
+background: linear-gradient(to left, #008080 78%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 78%, #005757 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
 }
 
 
@@ -295,8 +299,7 @@ nav .fas{
 
 @media only screen and (max-width:600px){
     #header{
-        font-size: 15px;
-        margin:0;        
+        font-size: 15px;     
     }
     #header h1{
         font-size: 30px;
