@@ -138,7 +138,7 @@ a:hover{
 
 
 .tab-contents ul li span{
-    color: red;
+    color:#FF007F;
 }
 
 .tab-contents.active-tab{
@@ -296,9 +296,7 @@ nav .fas{
 @media only screen and (max-width:600px){
     #header{
         font-size: 15px;
-        margin-top: 100%;
-        background
-        
+        margin-top:0;        
     }
     #header h1{
         font-size: 30px;
@@ -330,6 +328,9 @@ nav .fas{
         top:25px;
         left: 25px;
         cursor: pointer;
+    }
+    nav ul li a:hover{
+        color:black
     }
     .sub-title{
         font-size: 38px;
