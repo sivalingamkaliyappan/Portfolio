@@ -332,6 +332,11 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
+    
+    .work:hover .layer{
+        height: 100%;
+        font-size: 14px;
+    }
     .sub-title{
         font-size: 38px;
     }
