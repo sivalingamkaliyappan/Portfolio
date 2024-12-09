@@ -68,14 +68,8 @@ a:hover{
     font-size: 60px;
     margin-top: 20px;
 }
-
-.header h1 span{
-    
-    background: #008080;
-background: linear-gradient(to left, #008080 78%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 78%, #005757 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-
+.header h1 span {
+    color: #ff4081; /* Bright pink for emphasis */
 }
 
 
@@ -142,7 +136,7 @@ background: linear-gradient(to left, #008080 78%, #FFFFFF 25%, #05C1FF 50%, #FFF
 
 
 .tab-contents ul li span{
-    color:#FF007F;
+    color: red;
 }
 
 .tab-contents.active-tab{
@@ -299,17 +293,19 @@ nav .fas{
 
 @media only screen and (max-width:600px){
     #header{
-        font-size: 15px;     
+        font-size: 15px;
+        margin-top: 0;
     }
     #header h1{
         font-size: 30px;
+        text-align: center;
     }
     nav .fas{
         display: block;
         font-size: 25px;
     }
     nav ul{
-        background:#ff0000;
+        background: #ff004f;
         position: fixed;
         top: 0;
         right: -200px;
@@ -326,14 +322,14 @@ nav .fas{
         display: block;
         margin: 25px;
     }
+    nav ul li a:hover{
+        color:black;
+    }
     nav ul .fas{
         position: absolute;
         top:25px;
         left: 25px;
         cursor: pointer;
-    }
-    nav ul li a:hover{
-        color:black
     }
     .sub-title{
         font-size: 38px;
