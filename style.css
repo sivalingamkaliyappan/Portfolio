@@ -9,6 +9,11 @@ html{
     scroll-behavior: smooth;
 }
 
+p{
+    font-size: 1.2em;
+    color: #ebe4ab;
+}
+
 body{
     background-color: black;
     color: white;
@@ -49,12 +54,19 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    text-transform: uppercase;
+    transition: background 0.5s;
+    padding: 8px;
+    border: 0.1px solid red;
+    border-radius: 35% 0 35% 0;
 }
 
 
-a:hover{
-    color: rgb(255, 0, 0);
-    
+nav ul a:hover{
+    color: rgb(249, 243, 243); 
+    font-weight: 700;   
+    padding: 8px;
+    background-color: red;
 }
 
 
@@ -69,7 +81,7 @@ a:hover{
     margin-top: 20px;
 }
 .header h1 span {
-    color: #ff4081; /* Bright pink for emphasis */
+    color: #ee1313; /* Bright pink for emphasis */
 }
 
 
@@ -102,9 +114,11 @@ a:hover{
     flex-basis: 60%;
 }
 .sub-title{
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
     color: white;
+    margin-bottom: 1em;
 }
 
 
@@ -115,33 +129,42 @@ a:hover{
 
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: bold;
     cursor: pointer;
     position: relative;
+    padding: 8px;
+}
+
+.tab-titles p{
+    text-transform: uppercase;
+    transition: background 0.6s;
 }
 
 .tab-titles p:hover{
-    transform: translateY(-5px);
-    color: rgb(255, 0, 0);
+    padding: 8px;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+    border-radius: 50% 0 50% 0;
 }
 
 
 .tab-contents ul li{
-    list-style: none;
+    color: #ebe4ab;
+    list-style:circle;
     margin: 10px 0;
-    font-size: 14px;
+    font-size: 1.2em;
 }
 
 
 
 .tab-contents ul li span{
-    color: red;
+    color: rgb(179, 15, 249);
 }
 
 .tab-contents.active-tab{
     display: block;
-    
 }
 
 .tab-contents{
@@ -299,14 +322,15 @@ nav .fas{
     #header h1{
         font-size: 30px;
         text-align: center;
-        margin-top: 0;
+        /* margin-top: 40%; */
     }
     nav .fas{
+
         display: block;
         font-size: 25px;
     }
     nav ul{
-        background: #ff0000d6;
+        background: #080808d6;
         position: fixed;
         top: 0;
         right: -200px;
@@ -322,9 +346,16 @@ nav .fas{
     nav ul li{
         display: block;
         margin: 25px;
+        text-transform: uppercase;
+        transition: background 0.5s;
+        border: none;
     }
     nav ul li a:hover{
-        color:black;
+        color: rgb(249, 243, 243); 
+        font-weight: 700;   
+        padding: 4px;
+        background-color:red;
+        border-radius: 35% 0 35% 0;
     }
     nav ul .fas{
         position: absolute;
@@ -332,13 +363,14 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
-    
     .work:hover .layer{
         height: 100%;
         font-size: 14px;
     }
     .sub-title{
-        font-size: 38px;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
     }
     .aboutcol1,.aboutcol2{
         flex-basis: 100%;
@@ -350,8 +382,10 @@ nav .fas{
         font-size: 15px;
     }
     .tab-links{
-        font-size: 15px;
+        font-size: 1.25em;
         margin-right: 19px;
+        font-weight: bold;
+        color:white;
     }
     .contact-left,.contact-right{
         flex-basis: 100%;
