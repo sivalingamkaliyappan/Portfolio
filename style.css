@@ -363,12 +363,19 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
+    .tab-contents ul li{
+    color: #ebe4ab;
+    list-style:circle;
+    margin: 10px 0;
+    font-size: 1em;
+    }
+    
     .work:hover .layer{
         height: 100%;
         font-size: 14px;
     }
     .sub-title{
-        font-size: 25px;
+        font-size: 23px;
         text-transform: uppercase;
         font-weight: bold;
     }
@@ -382,7 +389,7 @@ nav .fas{
         font-size: 15px;
     }
     .tab-links{
-        font-size: 1.25em;
+        font-size: 1.3em;
         margin-right: 19px;
         font-weight: bold;
         color:white;
